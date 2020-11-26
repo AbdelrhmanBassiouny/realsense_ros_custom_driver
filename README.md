@@ -2,10 +2,11 @@
 A simple and fast driver for using Intel Realsense D400 series cameras with ROS and OpenCV.
 
 ## Dependencies
-
+```
 ros kinetic
 OpenCV >= 4
 realsense2
+```
 
 ## Installation
 ```
