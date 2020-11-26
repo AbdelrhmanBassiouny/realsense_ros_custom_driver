@@ -8,7 +8,7 @@ OpenCV >= 4
 realsense2
 ```
 
-## Installation
+## Installations
 ```
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/AbdelrhmanBassiouny/realsense_ros_custom_driver.git
