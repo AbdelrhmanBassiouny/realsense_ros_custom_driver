@@ -18,11 +18,12 @@ $ catkin build
 
 ## Sample Usage
 If needed change parameter values in the stream_publisher.launch launch file in realsense_ros_custom_driver/launch folder.
-Open a terminal and launch the stream_publisher.launch file:
+
+First open a terminal and launch the stream_publisher.launch file:
 ```
 $ roslaunch realsense_ros_custom_driver stream_publisher.launch
 ```
-In another terminal you can run a subscriber node to the published image stream topic:
+Then in another terminal you can run a subscriber node to the published image stream topic:
 ```
 $ rosrun realsense_ros_custom_driver_test test_node
 ```
