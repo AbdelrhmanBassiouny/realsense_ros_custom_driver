@@ -3,4 +3,5 @@
 build
 devel
 logs
-realsense-ros
+src/realsense-ros
+src/
