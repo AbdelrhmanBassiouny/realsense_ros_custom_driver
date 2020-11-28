@@ -1,0 +1,51 @@
+<<?xml version="1.0"?>
+<launch>
+    <<node pkg="realsense_ros_custom_driver" type="stream_publisher.cpp" name="stream_publisher">
+        
+        <!--================== STREAMS =======================-->
+
+        <!--depth stream-->
+        <param name="enable_depth" type="bool" value="ture"/>
+        <param name="depth_height" type="int" value="720"/>
+        <param name="depth_width" type="int" value="1280"/>
+        <param name="depth_fps" type="int" value="30"/>
+
+        <!--color stream-->
+        <param name="enable_color" type="bool" value="ture"/>
+        <param name="color_height" type="int" value="720"/>
+        <param name="color_width" type="int" value="1280"/>
+        <param name="color_fps" type="int" value="30"/>
+
+        <!--infrared stream-->
+        <param name="enable_ir" type="bool" value="false"/>
+        <param name="ir_height" type="int" value="720"/>
+        <param name="ir_width" type="int" value="1280"/>
+        <param name="ir_fps" type="int" value="30"/>
+
+        <!--align depth-->
+        <param name="align_depth" type="bool" value="true"/>
+
+        <!--================== FILTERS =======================-->
+
+        <!--temporal filter-->
+        <param name="enable_temporal_filter" type="bool" value="true"/>
+        <param name="alpha" type="float" value="0.2"/>
+        <param name="delta" type="int" value="100"/>
+        <param name="temporal_holes_fill" type="int" value="7"/> <!--range is [0 => 8]-->
+
+        <!--decimation filter-->
+        <param name="enable_decimation_filter" type="bool" value="false"/>
+        <param name="dec_value" type="int" value="3"/>
+
+        <!--spatial filter-->
+        <param name="enable_spatial_filter" type="bool" value="false"/>
+        <param name="spatial_holes_fill" type="int" value="5"/> <!--range is [0 => 8]-->
+
+        <!--threshold filter-->
+        <param name="enable_threshold_filter" type="bool" value="false"/>
+        <param name="max_dist" type="float" value="1.4"/>
+        <param name="min_dist" type="float" value="0.1"/>
+
+        
+    </node>
+</launch>
