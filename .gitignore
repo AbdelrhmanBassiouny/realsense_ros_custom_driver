@@ -4,4 +4,3 @@ build
 devel
 logs
 src/realsense-ros
-src/
